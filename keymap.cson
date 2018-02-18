@@ -35,7 +35,7 @@
   'ctrl-j': 'editor:move-to-beginning-of-word'
   'ctrl-o': 'editor:move-to-end-of-word'
   'cmd-b': 'bookmarks:jump-to-next-bookmark'
-  'ctrl-u': 'editor:delete-to-beginning-of-line'
+  'ctrl-u': 'editor:delete-line'
   'ctrl-w': 'editor:delete-to-beginning-of-word'
   # 'ctrl-w': 'custom:delete-word'
 
