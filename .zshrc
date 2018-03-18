@@ -19,8 +19,7 @@ function precmd() {
 autoload -Uz colors
 colors
 PROMPT="%{$fg[green]%}---%{${reset_color}%}"
-
-RPROMPT='%~'
+RPROMPT="%{$fg[yellow]%}%~%{${reset_color}%}"
 
 # 補完機能を有効にする
 autoload -Uz compinit
