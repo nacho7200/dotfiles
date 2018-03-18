@@ -16,7 +16,10 @@ function precmd() {
 }
 
 # プロンプトの設定
-PROMPT='----'
+autoload -Uz colors
+colors
+PROMPT="%{$fg[green]%}---%{${reset_color}%}"
+
 RPROMPT='%~'
 
 # 補完機能を有効にする
@@ -70,6 +73,9 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 
+export SCALA_HOME=/tmp/scala-2.11.4
+export PATH=$PATH:/tmp/scala-2.11.4/bin
+
 #port fowarding
 alias portmatriel8022="ssh -N -L 8022:matriel:22 mnagao@geo-ssh2.geo.titech.ac.jp"
 alias portlilin8022="ssh -N -L 8022:lilin:22 mnagao@geo-ssh2.geo.titech.ac.jp"
@@ -80,3 +86,5 @@ alias sshmatriel="ssh -t mnagao@geo-ssh2.geo.titech.ac.jp ssh matriel"
 alias sshlilin="ssh -t mnagao@geo-ssh2.geo.titech.ac.jp ssh lilin"
 alias ssharael="ssh -t mnagao@geo-ssh2.geo.titech.ac.jp ssh arael"
 alias sshalmisael="ssh -t mnagao@geo-ssh2.geo.titech.ac.jp ssh almisael"
+
+alias coupon="python3 ~/Private/Python/scraping/coupon.py"
