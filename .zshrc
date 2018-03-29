@@ -29,7 +29,7 @@ compinit
 setopt auto_pushd
 
 # cd 省略してディレクトリ移動
-setopt auto_cd
+# setopt auto_cd
 # 重複したディレクトリを追加しない
 setopt pushd_ignore_dups
 
@@ -96,3 +96,8 @@ alias gpo="git push origin"
 alias gpoh="git push origin HEAD"
 alias gd="git diff"
 alias gl="git log"
+alias gb="git branch"
+alias gr="git reset"
+alias gc="git checkout"
+
+alias d="cd" 
