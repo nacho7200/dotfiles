@@ -87,3 +87,12 @@ alias ssharael="ssh -t mnagao@geo-ssh2.geo.titech.ac.jp ssh arael"
 alias sshalmisael="ssh -t mnagao@geo-ssh2.geo.titech.ac.jp ssh almisael"
 
 alias coupon="python3 ~/Private/Python/scraping/coupon.py"
+
+alias g="git"
+alias gs="git status"
+alias ga.="git add ."
+alias gcm="git commit -m"
+alias gpo="git push origin"
+alias gpoh="git push origin HEAD"
+alias gd="git diff"
+alias gl="git log"
